@@ -1,7 +1,7 @@
 /*
 Theme Name: portfolio
 Theme URI: 
-Author: 
+Author: Angela
 Author URI: 
 Description: 
 Requires at least: 6.8
@@ -13,4 +13,44 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: portfolio
 Tags: 
 */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--wp--preset--color--pink);
+    padding: 12px 20px;
+    border-top: 2px solid var(--wp--preset--color--lavender);
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* space between buttons */
+    z-index: 9999;
+}
+
+.bottom-nav .wp-block-button {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-nav .wp-block-button__link {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* space between icon and text */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bottom-nav .wp-block-button__link i {
+    font-size: 18px;
+}
+
+/* Hover effect */
+.bottom-nav .wp-block-button__link:hover {
+    color: var(--wp--preset--color--lavender);
+}
+
+
+
 
