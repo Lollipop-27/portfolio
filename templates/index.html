@@ -1,93 +1,45 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- HERO / INTRO SECTION -->
-<!-- wp:group {"className":"home-hero","layout":{"type":"constrained"}} -->
-<div class="wp-block-group home-hero" style="text-align:center; padding:80px 20px; background-color:#ffe4f0;">
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":1} -->
+<h1 class="wp-block-heading has-text-align-center"><strong>Project</strong></h1>
+<!-- /wp:heading -->
 
-  <!-- wp:heading {"level":1} -->
-  <h1>Angela Chen</h1>
-  <!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Each project reflects a different part of my creative and technical journey — from coding logic and teamwork to design storytelling.</p>
+<!-- /wp:paragraph -->
 
-  <!-- wp:paragraph {"className":"tagline"} -->
-  <p class="tagline"><em>“Designing experiences that delight and inspire.”</em></p>
-  <!-- /wp:paragraph -->
-
-  <!-- wp:button {"className":"scroll-cta"} -->
-  <div class="wp-block-button scroll-cta">
-    <a class="wp-block-button__link wp-element-button" href="#projects-grid">
-      Explore My Projects <span class="arrow">⬇️</span>
-    </a>
-  </div>
-  <!-- /wp:button -->
-
-</div>
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"textAlign":"center"} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-align-center wp-element-button" href="#projects-grid">Explore My Projects ↓”</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- PROJECTS ARCHIVE / GRID -->
-<!-- wp:group {"className":"projects-archive","layout":{"type":"constrained"},"anchor":"projects-grid"} -->
-<div class="wp-block-group projects-archive" id="projects-grid">
+<!-- wp:spacer {"height":"153px"} -->
+<div style="height:153px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
 
-  <!-- Intro / Approach -->
-  <!-- wp:heading {"level":1} -->
-  <h1 class="wp-block-heading">Projects</h1>
-  <!-- /wp:heading -->
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div id="projects-grid" class="wp-block-group"><!-- wp:query {"queryId":30,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":true},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Grid"},"align":"wide"} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":null}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"30px","left":"30px"}},"color":{"background":"#d1ebfa"}},"layout":{"inherit":false}} -->
+<div class="wp-block-group has-background" style="background-color:#d1ebfa;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px"><!-- wp:post-featured-image /-->
 
-  <!-- wp:paragraph {"className":"projects-intro"} -->
-  <p class="projects-intro">Each project reflects a different part of my creative and technical journey — from coding logic and teamwork to design storytelling.</p>
-  <!-- /wp:paragraph -->
+<!-- wp:post-title {"isLink":true} /-->
 
-  <!-- Filter Buttons -->
-  <!-- wp:buttons {"className":"projects-filter","layout":{"type":"flex","justifyContent":"flex-start","gap":"15px"}} -->
-  <div class="wp-block-buttons projects-filter">
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
 
-    <!-- All -->
-    <div class="wp-block-button filter-btn active">
-      <a class="wp-block-button__link wp-element-button" href="#">All</a>
-    </div>
+<!-- wp:post-terms {"term":"post_tag"} /-->
 
-    <!-- Coding -->
-    <div class="wp-block-button filter-btn">
-      <a class="wp-block-button__link wp-element-button" href="#">Coding</a>
-    </div>
-
-    <!-- Design -->
-    <div class="wp-block-button filter-btn">
-      <a class="wp-block-button__link wp-element-button" href="#">Design</a>
-    </div>
-
-    <!-- Collaboration -->
-    <div class="wp-block-button filter-btn">
-      <a class="wp-block-button__link wp-element-button" href="#">Collaboration</a>
-    </div>
-
-  </div>
-  <!-- /wp:buttons -->
-
-  <!-- Projects Grid -->
-  <!-- wp:columns {"className":"projects-grid","align":"wide"} -->
-  <div class="wp-block-columns projects-grid">
-    
-    <!-- Example Project Card 1 -->
-    <div class="wp-block-column">
-      <div class="wp-block-group project-card">
-        <figure class="wp-block-image"><img src="PROJECT1_THUMB_URL" alt="Project 1"></figure>
-        <h3>Project 1</h3>
-        <p class="project-tags">Coding, Design</p>
-        <p class="project-intro">A short 1–2 sentence summary highlighting the approach and key outcomes.</p>
-        <div class="wp-block-button project-cta">
-          <a class="wp-block-button__link wp-element-button" href="/projects/project1/">Explore Project</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Duplicate Project Cards 2–6 here with correct thumbnails, titles, tags, and links -->
-
-  </div>
-  <!-- /wp:columns -->
-
-</div>
+<!-- wp:read-more {"content":"View Project →","linkTarget":"_blank","style":{"border":{"radius":"10px","width":"5px"}}} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query --></div>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"bottom-navigation","area":"uncategorized"} /-->
 
-<!-- wp:template-part {"slug":"footer","theme":"portfolio","tagName":"foot
+<!-- wp:template-part {"slug":"footer","area":"footer"} /-->
