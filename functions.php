@@ -1,6 +1,7 @@
 <?php
 // Rename default "Posts" to "Projects"
-function rename_posts_to_projects() {
+function rename_posts_to_projects()
+{
     global $menu, $submenu;
 
     // Safely rename top-level menu "Posts" to "Projects"
@@ -38,7 +39,24 @@ function rename_posts_to_projects() {
 add_action('admin_menu', 'rename_posts_to_projects');
 add_action('init', 'rename_posts_to_projects');
 
-function portfolio_enqueue_styles() {
+function portfolio_enqueue_assets() {
+    // Global style
+    wp_enqueue_style('portfolio-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
+
+    // Component CSS
+    wp_enqueue_style('portfolio-bottom-nav', get_template_directory_uri() . '/assets/css/bottom-nav.css', array('portfolio-style'), wp_get_theme()->get('Version'));
+    // wp_enqueue_style('portfolio-home-grid', get_template_directory_uri() . '/assets/css/home-grid.css', array('portfolio-style'), wp_get_theme()->get('Version'));
+
+    // Font Awesome
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+    // Global scroll JS (used for Projects button and other pages)
+    wp_enqueue_script(
+        'portfolio-scroll',
+        get_template_directory_uri() . '/assets/js/portfolio-scroll.js',
+        array(),
+        wp_get_theme()->get('Version'),
+        true
+    );
 }
-add_action('wp_enqueue_scripts', 'portfolio_enqueue_styles');
+add_action('wp_enqueue_scripts', 'portfolio_enqueue_assets');
