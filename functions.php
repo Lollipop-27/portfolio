@@ -60,3 +60,5 @@ function portfolio_enqueue_assets() {
     );
 }
 add_action('wp_enqueue_scripts', 'portfolio_enqueue_assets');
+
+require get_theme_file_path() . '/image-slider/image-slider.php';

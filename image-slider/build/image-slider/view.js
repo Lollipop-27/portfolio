@@ -1,0 +1,1 @@
+document.querySelectorAll(".wp-block-portfolio-blocks-image-slider .swiper").forEach(e=>{const o="1"===e.dataset.loop;parseInt(e.dataset.autoplay,10),new Swiper(e,{loop:o,autoplay:!1,pagination:{el:e.querySelector(".swiper-pagination"),clickable:!0},navigation:{nextEl:e.querySelector(".swiper-button-next"),prevEl:e.querySelector(".swiper-button-prev")}})});

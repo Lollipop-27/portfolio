@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "portfolio/image-slider",
+  "title": "Image Slider",
+  "category": "widgets",
+  "icon": "images-alt2",
+  "description": "Automatic image slider block using Swiper.js",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "items": {
+      "type": "array",
+      "default": []
+    },
+    "width": {
+      "type": "string",
+      "default": "100%"
+    },
+    "height": {
+      "type": "string",
+      "default": "auto"
+    },
+    "loop": {
+      "type": "boolean",
+      "default": false
+    },
+    "delay": {
+      "type": "number",
+      "default": 3000
+    }
+  },
+  "editorStyle": "file:./editor.css",
+  "render": "file:./render.php",
+  "textdomain": "image-slider",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
