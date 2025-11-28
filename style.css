@@ -14,7 +14,9 @@ Text Domain: portfolio
 Tags: 
 */
 
-
+:root {
+    --header-height: 100px;
+}
 
 
 /* Bottom nav global, fixed */
@@ -34,43 +36,100 @@ Tags:
 
 /* Prevent content from being hidden behind nav */
 body {
-    padding-bottom: 90px !important;
+    padding-bottom: 60px !important;
 }
 
-.intro-container {
-  height: 100vh; /* full viewport height */
-  display: flex;
-  align-items: center; /* vertical centering */
-  justify-content: center; /* horizontal centering */
-  flex-direction: column; /* stack heading, paragraph, button vertically */
-  text-align: center;
+header.wp-block-group {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
 }
+
+.intro-container,
 .project-intro-container {
-  height: 100vh; /* full viewport height */
-  display: flex;
-  align-items: center; /* vertical centering */
-  /* justify-content: center;  */
-  flex-direction: column; /* stack heading, paragraph, button vertically */
-  text-align: center;
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: var(--header-height);
+    /* prevents overlap if absolute header */
 }
 
-/* Hide projects grid initially
-.hidden-grid {
-    display: none;
+/* FIXED top-left Back to Projects button */
+.back-to-projects-fixed {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    z-index: 9999;
+
+    /* remove any flex weirdness from Gutenberg */
+    display: inline-block !important;
 }
 
-/* Reveal with fade-in */
-/* .hidden-grid.show-grid {
-    display: block;
-    opacity: 0;
-    animation: fadeIn 0.6s forwards;
-} */
+.back-to-projects-fixed .wp-block-button__link {
+    padding: 8px 14px;
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    background: white;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
 
-/* @keyframes fadeIn {
-    to { opacity: 1; }
-} */
+@media (max-width: 768px) {
+    .back-to-projects-fixed {
+        top: 12px;
+        left: 12px;
+    }
 
-/* Optional: fade-out before show */
-/* .hidden-grid.fade-out {
-    opacity: 0;
-}  */
+    .back-to-projects-fixed .wp-block-button__link {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Style previous/next navigation like outline buttons */
+.project-nav-button a {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid currentColor;
+    background: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.project-nav-button a:hover {
+    background: #f0f0f0;
+}
+
+/* Filter bar */
+.filter-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter-button {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-size: 16px;
+    background: #f7f7f7;
+}
+
+/* Hover effect */
+.filter-button:hover {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+/* Active state (clicked) */
+.filter-button.active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}

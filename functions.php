@@ -39,7 +39,8 @@ function rename_posts_to_projects()
 add_action('admin_menu', 'rename_posts_to_projects');
 add_action('init', 'rename_posts_to_projects');
 
-function portfolio_enqueue_assets() {
+function portfolio_enqueue_assets()
+{
     // Global style
     wp_enqueue_style('portfolio-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
 
@@ -58,7 +59,17 @@ function portfolio_enqueue_assets() {
         wp_get_theme()->get('Version'),
         true
     );
+    // Filter script
+    wp_enqueue_script(
+        'portfolio-filter',
+        get_template_directory_uri() . '/assets/js/filter.js',
+        array(),
+        null,
+        true // load in footer
+    );
 }
 add_action('wp_enqueue_scripts', 'portfolio_enqueue_assets');
 
 require get_theme_file_path() . '/image-slider/image-slider.php';
+
+

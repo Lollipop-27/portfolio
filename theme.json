@@ -89,6 +89,21 @@
 			}
 		}
 	},
+	"styles": {
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": "999px"
+				},
+				"padding": {
+					"top": "6px",
+					"bottom": "6px",
+					"left": "16px",
+					"right": "16px"
+				}
+			}
+		}
+	},
 	"templateParts": [
 		{
 			"area": "header",
