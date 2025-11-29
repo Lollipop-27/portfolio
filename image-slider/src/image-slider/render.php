@@ -17,8 +17,9 @@ if (empty($images))
         <div class="swiper-wrapper">
             <?php foreach ($images as $img): ?>
                 <div class="swiper-slide">
-                    <img src="<?php echo esc_url($img['url']); ?>" alt=""
-                        style="width: 400px; height: 300px; object-fit: cover;" />
+                    <img src="<?php echo esc_url($img['url']); ?>" alt="<?php echo esc_attr($img['alt'] ?? ''); ?>"
+                        loading="lazy">
+
                 </div>
             <?php endforeach; ?>
         </div>

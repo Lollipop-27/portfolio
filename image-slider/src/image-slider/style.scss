@@ -10,3 +10,23 @@
     object-fit: cover;
     display: block;
 }
+/* Make arrows smaller */
+.wp-block-portfolio-blocks-image-slider .swiper-button-prev,
+.wp-block-portfolio-blocks-image-slider .swiper-button-next {
+    width: 45px;       /* decrease size */
+    height: 45px;
+}
+
+.wp-block-portfolio-blocks-image-slider .swiper-button-prev::after,
+.wp-block-portfolio-blocks-image-slider .swiper-button-next::after {
+    font-size: 20px;   /* smaller arrow icon */
+}
+/* Make the image scale nicely inside a column */
+.wp-block-portfolio-blocks-image-slider .swiper-slide img {
+    width: 100%;
+    height: auto; /* keeps full image visible */
+    object-fit: contain; /* show whole image */
+    max-height: 300px; /* adjust based on column size */
+    display: block;
+    
+}

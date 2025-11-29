@@ -46,7 +46,7 @@ function portfolio_enqueue_assets()
 
     // Component CSS
     wp_enqueue_style('portfolio-bottom-nav', get_template_directory_uri() . '/assets/css/bottom-nav.css', array('portfolio-style'), wp_get_theme()->get('Version'));
-    // wp_enqueue_style('portfolio-home-grid', get_template_directory_uri() . '/assets/css/home-grid.css', array('portfolio-style'), wp_get_theme()->get('Version'));
+    
 
     // Font Awesome
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
