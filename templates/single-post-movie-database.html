@@ -1,7 +1,7 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","fontSize":"small"} -->
+<!-- wp:buttons {"className":"back-to-projects-fixed"} -->
+<div class="wp-block-buttons back-to-projects-fixed"><!-- wp:button {"className":"is-style-outline","fontSize":"small"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-small-font-size has-custom-font-size wp-element-button" href="http://localhost:8888/portfolio/projects/">← Back to Projects</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
@@ -12,34 +12,38 @@
 <div class="wp-block-column"><!-- wp:post-featured-image {"aspectRatio":"3/4"} /--></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:post-title /-->
+<!-- wp:column {"style":{"border":{"radius":"5px","width":"3px"},"shadow":"var:preset|shadow|natural"},"borderColor":"custom-rose-quartz"} -->
+<div class="wp-block-column has-border-color has-custom-rose-quartz-border-color" style="border-width:3px;border-radius:5px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:post-title {"level":1} /-->
 
-<!-- wp:paragraph -->
-<p>The Movie Database was built to provide users with an intuitive and interactive platform to discover and explore films. Its purpose was to combine robust functionality with an easy-to-use interface, making it simple for users to search, filter, and view detailed movie information.</p>
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}}} -->
+<p style="font-style:normal;font-weight:500">The Movie Database was built to provide users with an intuitive and interactive platform to discover and explore films. Its purpose was to combine robust functionality with an easy-to-use interface, making it simple for users to search, filter, and view detailed movie information.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>Lesson learned: The project aimed to demonstrate proficiency in React, JavaScript, and API integration while creating a responsive and dynamic application. Key outcomes include an optimized search and filter system, modular component design, and smooth user interactions that enhance both usability and performance.</p>
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}}} -->
+<p style="font-style:normal;font-weight:500">Lesson learned: The project aimed to demonstrate proficiency in React, JavaScript, and API integration while creating a responsive and dynamic application. Key outcomes include an optimized search and filter system, modular component design, and smooth user interactions that enhance both usability and performance.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:tag-cloud /-->
+<!-- wp:post-terms {"term":"post_tag","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-serenity"}}}}} /-->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Live Site </a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.junyuachen.com/movie-database/">Live Site </a></div>
 <!-- /wp:button -->
 
-<!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">GitHub</a></div>
+<!-- wp:button {"style":{"color":{"background":"#f4dddd","text":"#656c73"},"elements":{"link":{"color":{"text":"#656c73"}}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" href="https://github.com/Lollipop-27/movie-database" style="color:#656c73;background-color:#f4dddd">GitHub</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></div>
+<!-- /wp:columns -->
+
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-large"><img src="http://localhost:8888/portfolio/wp-content/uploads/2025/11/Arrow-2.svg" alt="" class=""/></figure>
+<!-- /wp:image --></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":"153px"} -->
-<div style="height:153px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"50px"} -->
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"textAlign":"center","style":{"typography":{"textDecoration":"underline"}}} -->
@@ -47,25 +51,29 @@
 <!-- /wp:heading -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-group"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"border":{"radius":"5px","color":"#d49f9d","width":"3px"}}} -->
+<div class="wp-block-columns alignwide has-border-color" style="border-color:#d49f9d;border-width:3px;border-radius:5px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Wireframes</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>The Movie Database project was designed to provide users with a simple, intuitive interface for discovering and exploring films. Using wireframes, I mapped out the primary user flows, including searching, filtering by genre, and viewing detailed movie information. The goal was to ensure that the interface remained clean and accessible while maintaining a visually engaging layout that emphasized the content hierarchy and user interaction paths. This planning stage helped identify key UI components and prepared the foundation for the front-end implementation in React.</p>
+<p>The Movie Database project was designed to provide users with a simple, intuitive interface for discovering and exploring films. Using wireframes, I mapped out the primary user flows, including searching, filter, and viewing detailed movie information. The goal was to ensure that the interface remained clean and accessible while maintaining a visually engaging layout that emphasized the content hierarchy and user interaction paths. This planning stage helped identify key UI components and prepared the foundation for the front-end implementation in React.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:jetpack/slideshow {"sizeSlug":"large"} /--></div>
+<div class="wp-block-column"><!-- wp:portfolio/image-slider {"items":[{"id":210,"url":"http://localhost:8888/portfolio/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-4.17.47-PM.png","alt":""},{"id":209,"url":"http://localhost:8888/portfolio/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-4.18.01-PM.png","alt":""}]} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:jetpack/slideshow {"sizeSlug":"large"} /--></div>
+<!-- wp:image {"width":"100px","height":"auto","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="http://localhost:8888/portfolio/wp-content/uploads/2025/11/Arrow-5.svg" alt="" class="" style="width:100px;height:auto"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"border":{"radius":"5px","color":"#d49f9d","width":"3px"}}} -->
+<div class="wp-block-columns alignwide has-border-color" style="border-color:#d49f9d;border-width:3px;border-radius:5px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:portfolio/image-slider {"items":[{"id":211,"url":"http://localhost:8888/portfolio/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-4.27.44-PM-scaled.png","alt":""},{"id":212,"url":"http://localhost:8888/portfolio/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-4.28.29-PM.png","alt":""}]} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
@@ -74,13 +82,17 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>The main challenge was integrating multiple APIs and presenting large amounts of movie data without overwhelming the user. To solve this, I implemented a modular component structure that separates the search, filter, and detail views. Lazy loading techniques and pagination were introduced to optimize performance and reduce page load times. Additionally, I designed intuitive error states and empty results screens to guide users when searches returned no data, ensuring a seamless and frustration-free browsing experience.</p>
+<p>The main challenge was integrating multiple APIs and presenting large amounts of movie data without overwhelming the user. To address this, I implemented a modular component structure that separates the search, filter, and detail views, making the interface easier to navigate. Lazy loading techniques and pagination were added to optimize performance and reduce initial load times. While I didn’t create full error-state screens, I did design a clear empty-state message for the Favourites tab, ensuring users understood when no movies had been added yet. This helped maintain a smooth and intuitive browsing experience.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
+<!-- wp:image {"width":"72px","height":"auto","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="http://localhost:8888/portfolio/wp-content/uploads/2025/11/Vector-64.svg" alt="" class="" style="width:72px;height:auto"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:columns {"align":"wide","style":{"border":{"radius":"5px","color":"#d49f9d","width":"3px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}}} -->
+<div class="wp-block-columns alignwide has-border-color" style="border-color:#d49f9d;border-width:3px;border-radius:5px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Functionality focus</h3>
 <!-- /wp:heading -->
@@ -91,21 +103,21 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:jetpack/slideshow {"sizeSlug":"large"} /--></div>
+<div class="wp-block-column"><!-- wp:portfolio/image-slider {"items":[{"id":213,"url":"http://localhost:8888/portfolio/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-4.29.50-PM-scaled.png","alt":""},{"id":215,"url":"http://localhost:8888/portfolio/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-4.31.11-PM.png","alt":""},{"id":214,"url":"http://localhost:8888/portfolio/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-4.30.39-PM.png","alt":""}]} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
-<div class="wp-block-group"><!-- wp:post-navigation-link {"type":"previous","showTitle":true,"arrow":"arrow"} /-->
+<div class="wp-block-group"><!-- wp:post-navigation-link {"type":"previous","showTitle":true,"arrow":"arrow","className":"project-nav-button"} /-->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","fontSize":"small"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-small-font-size has-custom-font-size wp-element-button">Back to Projects</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-small-font-size has-custom-font-size wp-element-button" href="http://localhost:8888/portfolio/projects/">Back to Projects</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:post-navigation-link {"showTitle":true,"arrow":"arrow"} /--></div>
+<!-- wp:post-navigation-link {"showTitle":true,"arrow":"arrow","className":"project-nav-button"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"bottom-navigation","area":"uncategorized"} /-->

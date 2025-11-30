@@ -1,8 +1,8 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">← Back to Projects</a></div>
+<!-- wp:buttons {"className":"back-to-projects-fixed"} -->
+<div class="wp-block-buttons back-to-projects-fixed"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="http://localhost:8888/portfolio/projects/">← Back to Projects</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
@@ -12,34 +12,38 @@
 <div class="wp-block-column"><!-- wp:post-featured-image {"aspectRatio":"3/4"} /--></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:post-title /-->
+<!-- wp:column {"style":{"border":{"radius":"5px","width":"3px"},"shadow":"var:preset|shadow|natural"},"borderColor":"custom-rose-quartz"} -->
+<div class="wp-block-column has-border-color has-custom-rose-quartz-border-color" style="border-width:3px;border-radius:5px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:post-title {"level":1} /-->
 
-<!-- wp:paragraph -->
-<p>The Portfolio Site was created to showcase both my design and technical skills for graduate school applications and professional opportunities. The project’s purpose was to present a comprehensive view of my design process, from ideation and wireframing to final implementation, while highlighting accessibility, usability, and visual design principles. The site also serves as a professional portfolio that communicates my personal design philosophy and approach to problem-solving.</p>
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}}} -->
+<p style="font-style:normal;font-weight:500">The Portfolio Site was created to showcase both my design and technical skills for graduate school applications and professional opportunities. The project’s purpose was to present a comprehensive view of my design process, from ideation and wireframing to final implementation, while highlighting accessibility, usability, and visual design principles. The site also serves as a professional portfolio that communicates my personal design philosophy and approach to problem-solving.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>Lesson learned</p>
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}}} -->
+<p style="font-style:normal;font-weight:500">Lesson learned:<br>This project taught me how to build cleaner, more organized code, design with consistency, and solve problems step-by-step. It strengthened both my technical skills and my confidence in creating a polished, functional website.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:tag-cloud /-->
+<!-- wp:post-terms {"term":"post_tag","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-serenity"}}}}} /-->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Live Site </a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="http://localhost:8888/portfolio/">Live Site </a></div>
 <!-- /wp:button -->
 
-<!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">GitHub</a></div>
+<!-- wp:button {"style":{"color":{"background":"#f4dddd","text":"#656c73"},"elements":{"link":{"color":{"text":"#656c73"}}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" href="https://github.com/Lollipop-27/portfolio" style="color:#656c73;background-color:#f4dddd">GitHub</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></div>
+<!-- /wp:columns -->
+
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-large"><img src="http://localhost:8888/portfolio/wp-content/uploads/2025/11/Arrow-1.svg" alt="" class=""/></figure>
+<!-- /wp:image --></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":"153px"} -->
-<div style="height:153px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"50px"} -->
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"textAlign":"center","style":{"typography":{"textDecoration":"underline"}}} -->
@@ -47,25 +51,29 @@
 <!-- /wp:heading -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-group"><!-- wp:columns {"align":"wide","style":{"border":{"radius":"5px","color":"#d49f9d","width":"3px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns alignwide has-border-color" style="border-color:#d49f9d;border-width:3px;border-radius:5px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Wireframes</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Wireframes were developed to map out the information architecture, navigation, and layout hierarchy. They allowed for early visualization of page structure, user flows, and interactions, helping to identify potential usability issues before moving into high-fidelity design. Iterative feedback and revisions ensured the wireframes accurately represented the intended user experience.</p>
+<p>Wireframing began as a way to explore the structure of the site and organize content effectively. I sketched out layouts, mapped navigation, and considered the hierarchy of information to visualize how users might move through the pages. Each iteration highlighted potential usability challenges, which I refined through feedback and testing. This process helped shape the high-fidelity designs, ensuring that the final layouts were intuitive, cohesive, and user-focused.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:jetpack/slideshow {"sizeSlug":"large"} /--></div>
+<div class="wp-block-column"><!-- wp:portfolio/image-slider {"items":[{"id":243,"url":"http://localhost:8888/portfolio/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-7.38.41-PM.png","alt":""}]} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:jetpack/slideshow {"sizeSlug":"large"} /--></div>
+<!-- wp:image {"width":"64px","height":"auto","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large is-resized"><img src="http://localhost:8888/portfolio/wp-content/uploads/2025/11/Arrow-5.svg" alt="" class="" style="width:64px;height:auto"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:columns {"align":"wide","style":{"border":{"radius":"5px","color":"#d49f9d","width":"3px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}}} -->
+<div class="wp-block-columns alignwide has-border-color" style="border-color:#d49f9d;border-width:3px;border-radius:5px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:portfolio/image-slider {"items":[{"id":244,"url":"http://localhost:8888/portfolio/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-7.44.42-PM.png","alt":""},{"id":245,"url":"http://localhost:8888/portfolio/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-7.42.28-PM.png","alt":""}]} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
@@ -74,38 +82,42 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>A detailed style guide was created to maintain visual consistency across the site. This included typography choices, spacing, button styles, and a carefully selected color palette. Soft neutral backgrounds provided clarity and readability, while accent colors were used strategically to draw attention to key elements, calls-to-action, and interactive components.</p>
+<p>Creating the style guide was an iterative process aimed at establishing a consistent visual language across the site. I experimented with typography, spacing, and button styles while refining a color palette that balanced clarity with visual interest. Soft neutral backgrounds set a clean foundation, while accent colors were strategically applied to highlight key elements and interactive components, ensuring the design remained cohesive and user-friendly.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
+<!-- wp:image {"width":"64px","height":"auto","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="http://localhost:8888/portfolio/wp-content/uploads/2025/11/Vector-64.svg" alt="" class="" style="width:64px;height:auto"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:columns {"align":"wide","style":{"border":{"radius":"5px","color":"#d49f9d","width":"3px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}}} -->
+<div class="wp-block-columns alignwide has-border-color" style="border-color:#d49f9d;border-width:3px;border-radius:5px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Content Inventory</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>A content inventory was performed to audit all existing materials and plan the organization of text, images, and multimedia. This ensured each page had a clear purpose, avoided redundancy, and aligned with user needs. The inventory also helped prioritize content placement, establish hierarchy, and guide the design of responsive layouts for desktop and mobile.</p>
+<p>I conducted a content inventory to understand the scope and structure of existing materials and plan how text, images, and multimedia would be organized. This process revealed redundancies and opportunities to clarify each page’s purpose. By prioritizing content placement and establishing a clear hierarchy, I was able to guide the design of responsive layouts that work effectively on both desktop and mobile, ensuring a streamlined and intuitive user experience.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:jetpack/slideshow {"sizeSlug":"large"} /--></div>
+<div class="wp-block-column"><!-- wp:portfolio/image-slider {"items":[{"id":247,"url":"http://localhost:8888/portfolio/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-7.46.21-PM.png","alt":""},{"id":248,"url":"http://localhost:8888/portfolio/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-7.46.28-PM.png","alt":""},{"id":249,"url":"http://localhost:8888/portfolio/wp-content/uploads/2025/11/Screenshot-2025-11-28-at-7.46.35-PM.png","alt":""}]} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
-<div class="wp-block-group"><!-- wp:post-navigation-link {"type":"previous","showTitle":true,"arrow":"arrow"} /-->
+<div class="wp-block-group"><!-- wp:post-navigation-link {"type":"previous","showTitle":true,"arrow":"arrow","className":"project-nav-button"} /-->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","fontSize":"small"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-small-font-size has-custom-font-size wp-element-button">Back to Projects</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-small-font-size has-custom-font-size wp-element-button" href="http://localhost:8888/portfolio/projects/">Back to Projects</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:post-navigation-link {"showTitle":true,"arrow":"arrow"} /--></div>
+<!-- wp:post-navigation-link {"showTitle":true,"arrow":"arrow","className":"project-nav-button"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"bottom-navigation","area":"uncategorized"} /-->

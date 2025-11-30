@@ -49,6 +49,9 @@
 			"contentSize": "620px",
 			"wideSize": "1000px"
 		},
+		"shadow": {
+			"presets": []
+		},
 		"spacing": {
 			"units": [
 				"%",
@@ -83,23 +86,11 @@
 	"styles": {
 		"blocks": {
 			"core/button": {
-				"color": {
-					"background": "#92a8d1"
-				}
-			}
-		}
-	},
-	"styles": {
-		"blocks": {
-			"core/button": {
 				"border": {
 					"radius": "999px"
 				},
-				"padding": {
-					"top": "6px",
-					"bottom": "6px",
-					"left": "16px",
-					"right": "16px"
+				"color": {
+					"background": "var(--wp--preset--color--custom-serenity)"
 				}
 			}
 		}
