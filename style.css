@@ -122,14 +122,14 @@ header.wp-block-group {
 
 /* Hover effect */
 .filter-button:hover {
-    background: #000;
+    background: #b28181;
     color: #fff;
-    border-color: #000;
+    border-color: #b28181;
 }
 
 /* Active state (clicked) */
 .filter-button.active {
-    background: #000;
+    background: #493232;
     color: #fff;
-    border-color: #000;
+    border-color: #493232;
 }

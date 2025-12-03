@@ -13,23 +13,23 @@
     <!-- wp:buttons {"className":"filter-buttons"} -->
     <div class="wp-block-buttons filter-buttons">
         <!-- wp:button {"className":"filter-button"} -->
-        <div class="wp-block-button filter-button"><a class="wp-block-button__link wp-element-button" data-category="all" href="#">All</a></div>
+        <div class="wp-block-button filter-button"><a class="wp-block-button__link wp-element-button all"  href="#">All</a></div>
         <!-- /wp:button -->
 
         <!-- wp:button {"className":"filter-button"} -->
-        <div class="wp-block-button filter-button"><a class="wp-block-button__link wp-element-button" data-category="design" href="#">Design</a></div>
+        <div class="wp-block-button filter-button"><a class="wp-block-button__link wp-element-button category-design"  href="#">Design</a></div>
         <!-- /wp:button -->
 
         <!-- wp:button {"className":"filter-button"} -->
-        <div class="wp-block-button filter-button"><a class="wp-block-button__link wp-element-button" data-category="coding" href="#">Coding</a></div>
+        <div class="wp-block-button filter-button"><a class="wp-block-button__link wp-element-button category-coding"  href="#">Coding</a></div>
         <!-- /wp:button -->
 
         <!-- wp:button {"className":"filter-button"} -->
-        <div class="wp-block-button filter-button"><a class="wp-block-button__link wp-element-button" data-category="collaboration" href="#">Collaboration</a></div>
+        <div class="wp-block-button filter-button"><a class="wp-block-button__link wp-element-button category-collaboration"  href="#">Collaboration</a></div>
         <!-- /wp:button -->
 
         <!-- wp:button {"className":"filter-button"} -->
-        <div class="wp-block-button filter-button"><a class="wp-block-button__link wp-element-button" data-category="development" href="#">Development</a></div>
+        <div class="wp-block-button filter-button"><a class="wp-block-button__link wp-element-button category-development"  href="#">Development</a></div>
         <!-- /wp:button -->
     </div>
     <!-- /wp:buttons -->
